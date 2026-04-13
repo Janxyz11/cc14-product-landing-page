@@ -14,3 +14,20 @@ function addToCart(item) {
 
     cartPanel.classList.add("show");
 }
+
+function renderCart() {
+    const items = Object.keys(cart);
+
+    if (items.length === 0) {
+        cartItems.innerHTML = "No items added yet.";
+        return;
+    }
+
+    cartItems.innerHTML = items
+        .map(item => `
+            <div class="cart-item">
+                ${item} x${cart[item]}
+            </div>
+        `)
+        .join("");
+}
