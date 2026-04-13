@@ -55,6 +55,13 @@ nav a {
   margin: auto;
 }
 
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
 .feature-grid,
 .product-grid {
   display: flex;
@@ -62,6 +69,21 @@ nav a {
   justify-content: center;
   flex-wrap: wrap;
   padding: 40px 0;
+}
+
+.card-feature {
+    background: #efbbff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
 .product-grid {
@@ -162,6 +184,31 @@ nav a {
     font-weight: bold;
     font-size: 16px;
     color: white;
+}
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-info {
+    background: #efbbff;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.contact-info i {
+    color: #be29ec;
+    margin-right: 10px;
+    width: 20px;
 }
 
 footer {
