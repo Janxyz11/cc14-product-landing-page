@@ -118,5 +118,48 @@ nav a {
     padding: 12px 18px;
     border-radius: 10px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 1100;
+}
+
+.cart-panel {
+  position: fixed;
+  right: 20px;
+  top: 170px;
+  width: 280px;
+  background: #be29ec;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+  transform: translateX(120%);
+  transition: transform 0.3s ease;
+}
+
+.cart-panel.show {
+  transform: translateX(0);
+  color: white;
+}
+
+#cartItems {
+  margin: 10px 0;
+  min-height: 50px;
+}
+
+.cart-item {
+  border-bottom: 1px solid #be29ec;
+  padding: 5px 0;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+#totalPrice {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
 }
