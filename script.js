@@ -35,3 +35,18 @@ function renderCart() {
 function toggleCart() {
     cartPanel.classList.toggle("show");
 }
+
+
+function buyNow() {
+    if (Object.keys(cart).length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    alert("Thanks for buying from Frank's Flower Shop!");
+
+    cart = {};
+    renderCart();
+
+    cartPanel.classList.remove("show");
+}
