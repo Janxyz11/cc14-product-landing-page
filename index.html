@@ -28,15 +28,15 @@
         <section class="features" id="features">
             <h2 class="section-title">About Us</h2>
             <div class="feature-grid">
-                <div class="card">
+                <div class="card-feature">
                     <h3>Quality Flowers</h3>
                     <p>We source only the finest flowers from local growers.</p>
                 </div>
-                <div class="card">
+                <div class="card-feature">
                     <h3>Custom Designs</h3>
                     <p>Our expert florists create unique arrangements for every occasion.</p>
                 </div>
-                <div class="card">
+                <div class="card-feature">
                     <h3>Fast Delivery</h3>
                     <p>We deliver your flowers fresh and on time, every time.</p>
                 </div>
@@ -44,7 +44,7 @@
         </section>
 
         <section class="products" id="products">
-        <h2 class="section-title">Our Best Sellers</h2>
+        <h2 class="section-title">Products</h2>
         <div class="product-grid">
             <div class="card">
                 <img src="flower 1.png" alt="Rose Bouquet" width="150px" height="150px">
@@ -53,9 +53,57 @@
                 <h4>₱899</h4>
                 <button class="btn" onclick="addToCart('Rose Bouquet - ₱899')">Add to Cart</button>
             </div>
+
+            <div class="card">
+                <img src="flower 2.png" alt="Rose Bouquet" width="150px" height="150px">
+                <h3>Rose Bouquet</h3>
+                <p>Elegant red roses perfect for romantic occasions.</p>
+                <h4>₱899</h4>
+                <button class="btn" onclick="addToCart('Rose Bouquet - ₱899')">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="flower 3.png" alt="Rose Bouquet" width="150px" height="150px">
+                <h3>Rose Bouquet</h3>
+                <p>Elegant red roses perfect for romantic occasions.</p>
+                <h4>₱899</h4>
+                <button class="btn" onclick="addToCart('Rose Bouquet - ₱899')">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="flower 4.png" alt="Rose Bouquet" width="150px" height="150px">
+                <h3>Rose Bouquet</h3>
+                <p>Elegant red roses perfect for romantic occasions.</p>
+                <h4>₱899</h4>
+                <button class="btn" onclick="addToCart('Rose Bouquet - ₱899')">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="flower 5.png" alt="Rose Bouquet" width="150px" height="150px">
+                <h3>Rose Bouquet</h3>
+                <p>Elegant red roses perfect for romantic occasions.</p>
+                <h4>₱899</h4>
+                <button class="btn" onclick="addToCart('Rose Bouquet - ₱899')">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="flower 6.png" alt="Rose Bouquet" width="150px" height="150px">
+                <h3>Rose Bouquet</h3>
+                <p>Elegant red roses perfect for romantic occasions.</p>
+                <h4>₱899</h4>
+                <button class="btn" onclick="addToCart('Rose Bouquet - ₱899')">Add to Cart</button>
+            </div>
         </div>
         </section>
 
+    </div>
+
+    <button class="cart-toggle" onclick="toggleCart()">View Cart</button>
+
+    <div class="cart-panel" id="cartPanel">
+        <h3>Your Cart</h3>
+        <div id="cartItems">No items added yet.</div>
+        <button class="btn" onclick="buyNow()">Buy Now</button>
     </div>
 
 </body>
