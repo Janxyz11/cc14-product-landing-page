@@ -31,3 +31,7 @@ function renderCart() {
         `)
         .join("");
 }
+
+function toggleCart() {
+    cartPanel.classList.toggle("show");
+}
